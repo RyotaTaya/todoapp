@@ -22,13 +22,13 @@ services:
     tty: true
     volumes:
       - ./:/app/go
-    command: sh -c "cd /app/go/golang-app  && ./main"
+    command: sh -c "cd golang-app  && chmod +x main && ./main"
 
   nginx:
     image: nginx
     container_name: nginx_container
     ports:
-      - 80:80
+      - 81:81
     environment:
       - TZ=Asia/Tokyo
     volumes:
