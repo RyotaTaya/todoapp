@@ -28,7 +28,7 @@ services:
     image: nginx
     container_name: nginx_container
     ports:
-      - 81:81
+      - 80:80
     environment:
       - TZ=Asia/Tokyo
     volumes:
