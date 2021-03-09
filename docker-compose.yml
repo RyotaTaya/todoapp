@@ -28,7 +28,7 @@ services:
     image: nginx
     container_name: todoapp_nginx
     ports:
-      - 80:80
+      - 81:81
     environment:
       - TZ=Asia/Tokyo
     volumes:
